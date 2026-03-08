@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 public class UserKafkaConsumer {
 
     @KafkaListener(topics = "user-random-topic")
+
     public void handleUserRandomTopic1(String message) {
 
         log.info("handleUserRandomTopic1:  {}", message);
